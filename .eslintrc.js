@@ -5,20 +5,24 @@ module.exports = {
     browser: true,
     es6: true
   },
-  plugins: ['jest', 'prettier'],
+  plugins: ['jest'],
   extends: [
+    'plugin:vue/recommended',
     'eslint:recommended',
-    'airbnb',
-    'prettier',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:vue/recommended'
+    'prettier/vue',
+    'plugin:prettier/recommended'
   ],
   rules: {
     semi: ['error', 'never'],
-    'prettier/prettier': ['error']
+
+    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
   settings: {
     'import/resolver': 'webpack'
+  },
+  parserOptions: {
+    parser: 'babel-eslint'
   }
 }
