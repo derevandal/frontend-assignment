@@ -20,6 +20,7 @@ module.exports = {
     ignored: ['node_modules']
   },
   resolve: {
+    extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       Router: path.resolve(__dirname, 'src', 'router'),
