@@ -20,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "normalize.scss": "^0.1.0",
     "vue": "2.6.10",
     "vue-router": "^3.1.2",
     "vuex": "^3.1.1"
@@ -29,6 +30,7 @@
     "@babel/preset-env": "^7.5.5",
     "@vue/test-utils": "^1.0.0-beta.29",
     "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.2",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
@@ -38,7 +40,6 @@
     "cssnano": "^4.1.10",
     "dotenv": "^8.0.0",
     "eslint": "6.1.0",
-    "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-loader": "^2.2.1",
