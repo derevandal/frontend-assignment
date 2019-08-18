@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <CNavbar />
-    <main>
-      <CBreadcrumb />
-      <CNavigation />
-      <router-view />
+    <main class="Main">
+      <div class="container">
+        <CBreadcrumb />
+        <CNavigation />
+        <router-view />
+      </div>
     </main>
     <CFooter />
   </div>
