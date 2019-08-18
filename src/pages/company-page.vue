@@ -1,5 +1,5 @@
 <template>
-    <div>
-        Company Page
-    </div>
+  <div>
+    Company Page
+  </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div>
-        Company Data
-    </div>
+  <div>
+    Company Data
+  </div>
 </template>

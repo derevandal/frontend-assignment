@@ -7,9 +7,8 @@ import CompanyPage from 'Pages/company-page.vue'
 const routes = [
   { path: '/', redirect: '/company-data' },
   { path: '/company-data', component: CompanyData },
-  { path: '/company-page', component: CompanyPage}
+  { path: '/company-page', component: CompanyPage }
 ]
-
 
 Vue.use(Router)
 
