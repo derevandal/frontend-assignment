@@ -4,6 +4,9 @@ import App from './App'
 import router from './router'
 
 import store from './store'
+import vmodal from 'vue-js-modal'
+
+Vue.use(vmodal)
 
 /* eslint-disable no-new */
 new Vue({
