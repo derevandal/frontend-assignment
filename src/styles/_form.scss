@@ -32,5 +32,22 @@
       width: 100%;
       resize: none;
     }
+    &--error {
+      border: 1px solid rgb(245, 81, 81);
+      box-shadow: 0 0 0.25rem 0.15rem rgba(245, 81, 81, 0.05);
+      &:focus {
+        border-color: rgb(245, 81, 81);
+      }
+    }
+  }
+  &__Error {
+    width: 50%;
+    margin: 0.5em 0;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    color: rgb(245, 81, 81);
+    border-left: 4px solid rgb(245, 81, 81);
+    background: rgba(245, 81, 81, 0.1);
   }
 }
