@@ -1,5 +1,3 @@
-$borde-radius: 10px;
-
 .Navigation {
   max-width: 20vw;
   width: 100%;
@@ -14,24 +12,24 @@ $borde-radius: 10px;
     font-weight: bolder;
     font-size: 1em;
     text-decoration: none;
-    border: 1px solid #d4d9e3;
+    border: 1px solid $grey-light;
     border-bottom: none;
-    color: #66709f;
+    color: $blue;
     position: relative;
     &:first-child {
-      border-top-left-radius: $borde-radius;
-      border-top-right-radius: $borde-radius;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
       &::before {
-        border-top-left-radius: $borde-radius;
+        border-top-left-radius: $border-radius;
       }
     }
     &:last-child {
-      border-bottom-left-radius: $borde-radius;
-      border-bottom-right-radius: $borde-radius;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
       &::before {
-        border-bottom-left-radius: $borde-radius;
+        border-bottom-left-radius: $border-radius;
       }
-      border-bottom: 1px solid #d4d9e3;
+      border-bottom: 1px solid $grey-light;
     }
     &::before {
       position: absolute;
@@ -44,11 +42,11 @@ $borde-radius: 10px;
       transition: all 0.3s ease-in-out;
     }
     &:hover {
-      background: #fafbfc;
-      color: #505050;
+      background: $light;
+      color: $grey-dark;
       &::before {
         width: 5px;
-        background: #344279;
+        background: $blue;
       }
     }
   }

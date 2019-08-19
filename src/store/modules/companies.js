@@ -21,8 +21,8 @@ const state = {
       name: 'Google Cloud Platform'
     },
     {
-      id: 'CenturyLink CDN',
-      name: 'century-link-cdn'
+      id: 'century-link-cdn',
+      name: 'CenturyLink CDN'
     }
   ]
 }
@@ -31,7 +31,8 @@ const getters = {
     return companies.find(e => e.id === id)
   },
   getCompanyNameById: ({ companies }) => id => {
-    return companies.find(e => e.id === id).name
+    const { name } = companies.find(e => e.id === id)
+    return name
   }
 }
 

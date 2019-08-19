@@ -1,5 +1,5 @@
 const state = {
-  activies: [
+  activities: [
     {
       company: 'microsoft',
       timePassed: '8 days ago',
@@ -51,8 +51,8 @@ const state = {
 }
 
 const getters = {
-  getActiviesByCompanyId: ({ activies }) => companyId => {
-    return activies.find(e => e.company === companyId)
+  getActivitiesByCompanyId: ({ activities }) => companyId => {
+    return activities.filter(e => e.company === companyId)
   }
 }
 

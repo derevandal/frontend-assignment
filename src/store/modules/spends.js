@@ -15,7 +15,7 @@ const state = {
 
 const getters = {
   getSpendHistoryBuyerByCompanyId: ({ history }) => companyId => {
-    return history.find(e => e.from === companyId)
+    return history.filter(e => e.from === companyId)
   }
 }
 

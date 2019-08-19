@@ -4,8 +4,10 @@
     <main class="Main">
       <div class="container">
         <CBreadcrumb />
-        <CNavigation />
-        <router-view />
+        <div class="Pagegrid">
+          <CNavigation />
+          <router-view class="Pageview" />
+        </div>
       </div>
     </main>
     <CFooter />
@@ -13,10 +15,10 @@
 </template>
 
 <script>
-import CNavbar from './components/common/navbar'
-import CBreadcrumb from './components/common/breadcrumb'
-import CNavigation from './components/common/navigation'
-import CFooter from './components/common/footer'
+import CNavbar from 'Components/common/navbar'
+import CBreadcrumb from 'Components/common/breadcrumb'
+import CNavigation from 'Components/common/navigation'
+import CFooter from 'Components/common/footer'
 
 export default {
   name: 'App',
