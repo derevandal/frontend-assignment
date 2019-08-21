@@ -5,12 +5,12 @@ module.exports = {
     browser: true,
     es6: true
   },
-  plugins: ['jest'],
   extends: [
     'plugin:vue/recommended',
     'eslint:recommended',
     'prettier/vue',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:jest/recommended'
   ],
   rules: {
     semi: ['error', 'never'],
