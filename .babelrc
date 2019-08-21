@@ -3,9 +3,24 @@
     [
       "@babel/preset-env",
       {
+        "modules": false,
         "targets": "last 1 version, > 1%, maintained node versions, not dead",
         "loose": true,
       }
     ]
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  }
 }
