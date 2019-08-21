@@ -50,4 +50,17 @@
     border-left: 4px solid rgb(245, 81, 81);
     background: rgba(245, 81, 81, 0.1);
   }
+  &__Button {
+    display: block;
+    padding: .5em 1.5em;
+    text-transform: uppercase;
+    color: white;
+    background: $blue-ligth;
+    border-radius: $border-radius;
+    border: 1px solid $blue-ligth;
+    font-size: .9em;
+    &--right {
+      margin-left: auto;
+    }
+  }
 }
