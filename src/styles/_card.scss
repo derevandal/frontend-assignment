@@ -26,12 +26,15 @@
       list-style: none;
     }
     &--spend-history {
+      display: block;
       margin: 1em auto 0 auto;
-      width: 350px;
+      max-width: 350px;
+      width: 100%;
       height: calc(350px * 0.34375);
       content: '';
       background: url('~Images/graph.png') no-repeat top center;
       background-size: contain;
+      box-sizing: border-box;
     }
     &__Item {
       display: flex;
