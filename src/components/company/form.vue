@@ -13,7 +13,7 @@
           />
         </div>
         <div class="Form__Group">
-          <input class="Form__Button Form__Button--right" type="submit" value="Send" />
+          <input class="Form__Button Form__Button--right" type="submit" value="Save" />
         </div>
       </form>
     </modal>
