@@ -10,7 +10,7 @@
   "scripts": {
     "clean:build": "rimraf build",
     "predev": "npm run clean:build",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --port 3000",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --port 8080",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
